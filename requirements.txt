@@ -1,4 +1,4 @@
-zhixuewang
 pyinstaller
 pylint
 autopep8
+git+https://github.com/YogurtZebra/zhixuewang-python
