@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['zxw.py'],
-             pathex=['E:\\VSCodeFiles\\zhixuewang-main'],
+             pathex=['E:\\VSCodeFiles\\zxw\\zhixuewang'],
              binaries=[],
              datas=[],
              hiddenimports=[],
