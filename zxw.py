@@ -32,6 +32,20 @@ def getget_origin(exam):
         print("请复制链接在浏览器中打开，然后右键保存。")
 
 
+<<<<<<< HEAD
+=======
+def calculate(exam):
+    while True:
+        print("\n是否需要获取总分与排名？")
+        b = input("请确认所有学科的成绩都已发布，否则可能会出错。\n").strip()
+        if b == "Y" or b == "y":
+            print(zxw.get_self_mark(exam, True))
+            break
+        if b == "N" or b == "n":
+            break
+
+
+>>>>>>> f7075da58e3494f2fbc1a808ada05fcd11b243c3
 print("这是一个用于查询智学网上考试分数的程序。")
 print("该程序需要你提供账号与密码来登陆账号。")
 print("如果发现任何错误，请联系我们。")
