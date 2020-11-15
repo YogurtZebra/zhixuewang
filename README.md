@@ -4,8 +4,6 @@
 
 该程序基于[zhixuewang包](https://github.com/anwenhu/zhixuewang-python)的[fork版本](https://github.com/YogurtZebra/zhixuewang-python)，只是一个简单的命令行交互。
 
-如果你有兴趣制作图形化界面，欢迎[issue](https://github.com/YogurtZebra/zhixuewang/issues)。
-
 ## 注意
 
 为了美观起见，我对默认的包进行了修改，fork的项目位于这里。
