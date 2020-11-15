@@ -23,26 +23,13 @@ def getget_origin(exam):
 
     sub = str(input("\n请输入学科名称："))
     url = zxw.get_original(sub, exam)
-    test = str(url[1:len(url)-1])
-
-    if test == '':
+    if str(url[1:len(url)-1]) == '':
         print("获取失败。")
     else:
         print("原卷网页地址:")
         for i in url:
             print(i)
         print("请复制链接在浏览器中打开，然后右键保存。")
-
-
-def calculate(exam):
-    while True:
-        print("\n是否需要获取总分？")
-        b = input("请确认所有学科的成绩都已发布，否则可能会出错。\n").strip()
-        if b == "Y" or b == "y":
-            print(zxw.get_self_mark(exam, True))
-            break
-        if b == "N" or b == "n":
-            break
 
 
 print("这是一个用于查询智学网上考试分数的程序。")
@@ -78,9 +65,8 @@ while True:
             i = int(i)
             exam = exams[i]
             print("成绩为:")
-            print(zxw.get_self_mark(exam, False))
+            print(zxw.get_self_mark(exam, True))
             get_origin(exam)
-            calculate(exam)
             while True:
                 b = input("\n是否查询其他考试？\n").strip()
                 if b == "Y" or b == "y":
