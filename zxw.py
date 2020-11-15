@@ -36,7 +36,7 @@ def getget_origin(exam):
 
 def calculate(exam):
     while True:
-        print("\n是否需要获取总分？")
+        print("\n是否需要获取总分与排名？")
         b = input("请确认所有学科的成绩都已发布，否则可能会出错。\n").strip()
         if b == "Y" or b == "y":
             print(zxw.get_self_mark(exam, True))
