@@ -25,7 +25,8 @@ def getget_origin(exam):
 
     sub = str(input("\n请输入学科名称："))
     url = zxw.get_original(sub, exam)
-    if str(url[1:len(url)-1]) == '':
+    test = str(url[1:len(url)-1])
+    if test == "[]":
         print("获取失败。")
     else:
         print("原卷网页地址:")
@@ -35,25 +36,25 @@ def getget_origin(exam):
 
 
 def input_noback():
-	li = []
-	while 1:
-	    ch = msvcrt.getch()
-	    if ch == b'\r':
-	        msvcrt.putch(b'\n')
-	        get_input = '%s' % b''.join(li).decode()
-	        break
-	    elif ch == b'\x08':
-	        if li:
-	            li.pop()
-	            msvcrt.putch(b'\b')
-	            msvcrt.putch(b' ')
-	            msvcrt.putch(b'\b')
-	    elif ch == b'\x1b':
-	        break
-	    else:
-	        li.append(ch)
-	        msvcrt.putch(b'*')
-	return get_input
+    li = []
+    while True:
+        ch = msvcrt.getch()
+        if ch == b'\r':
+            msvcrt.putch(b'\n')
+            get_input = '%s' % b''.join(li).decode()
+            break
+        elif ch == b'\x08':
+            if li:
+                li.pop()
+                msvcrt.putch(b'\b')
+                msvcrt.putch(b' ')
+                msvcrt.putch(b'\b')
+        elif ch == b'\x1b':
+            break
+        else:
+            li.append(ch)
+            msvcrt.putch(b'*')
+    return get_input
 
 
 print("这是一个用于查询智学网上考试分数的程序。")
@@ -63,7 +64,9 @@ print('\n本程序的所有交互通过输入"Y"（是）与"N"（不是）来�
 
 while True:
     try:
+        os.system("cls")
         username = input("你的账号:").strip()
+        print("你的密码:", end="")
         password = input_noback().strip()
         zxw = login(username, password)
         os.system("cls")
@@ -98,9 +101,11 @@ while True:
                     break
                 if b == "N" or b == "n":
                     continued = False
+                    print("\n再见！")
                     exit()
                 else:
                     print("输入有误")
+            
 
     except zhiExc.UserOrPassError:
         print("用户名或密码错误，请重新输入。\n")
