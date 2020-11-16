@@ -1,7 +1,8 @@
 from zhixuewang import login
 from zhixuewang import exceptions as zhiExc
 import os
-import getpass
+import msvcrt
+import sys
 
 
 def get_origin(exam):
@@ -33,6 +34,28 @@ def getget_origin(exam):
         print("请复制链接在浏览器中打开，然后右键保存。")
 
 
+def input_noback():
+	li = []
+	while 1:
+	    ch = msvcrt.getch()
+	    if ch == b'\r':
+	        msvcrt.putch(b'\n')
+	        get_input = '%s' % b''.join(li).decode()
+	        break
+	    elif ch == b'\x08':
+	        if li:
+	            li.pop()
+	            msvcrt.putch(b'\b')
+	            msvcrt.putch(b' ')
+	            msvcrt.putch(b'\b')
+	    elif ch == b'\x1b':
+	        break
+	    else:
+	        li.append(ch)
+	        msvcrt.putch(b'*')
+	return get_input
+
+
 print("这是一个用于查询智学网上考试分数的程序。")
 print("该程序需要你提供账号与密码来登陆账号。")
 print("如果发现任何错误，请联系我们。")
@@ -41,7 +64,7 @@ print('\n本程序的所有交互通过输入"Y"（是）与"N"（不是）来�
 while True:
     try:
         username = input("你的账号:").strip()
-        password = getpass.getpass("你的密码(不会显示):").strip()
+        password = input_noback().strip()
         zxw = login(username, password)
         os.system("cls")
         print("登录成功，正在获取考试列表...")
