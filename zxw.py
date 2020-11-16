@@ -1,8 +1,7 @@
 from zhixuewang import login
 from zhixuewang import exceptions as zhiExc
 import os
-import msvcrt
-import sys
+import msvcrt, sys
 
 
 def get_origin(exam):
