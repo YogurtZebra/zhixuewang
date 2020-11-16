@@ -1,6 +1,7 @@
 from zhixuewang import login
 from zhixuewang import exceptions as zhiExc
 import os
+import getpass
 
 
 def get_origin(exam):
@@ -40,7 +41,7 @@ print('\n本程序的所有交互通过输入"Y"（是）与"N"（不是）来�
 while True:
     try:
         username = input("你的账号:").strip()
-        password = input("你的密码:").strip()
+        password = getpass.getpass("你的密码:").strip()
         zxw = login(username, password)
         os.system("cls")
         print("登录成功，正在获取考试列表...")
