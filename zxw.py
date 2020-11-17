@@ -25,18 +25,17 @@ def getget_origin(exam):
     sub = str(input("\n请输入学科名称："))
     url = zxw.get_original(sub, exam)
     test = str(url[1:len(url)-1])
-    if test == "[]":
+    if test == '':
         print("获取失败。")
     else:
-        print("原卷网页地址:")
+        print(sub+"原卷网页地址:")
         for i in url:
             print(i)
         print("请复制链接在浏览器中打开，然后右键保存。")
 
 
-def input_noback(msgg):
+def input_noback():
     li = []
-    print(msgg, end="")
     while True:
         ch = msvcrt.getch()
         if ch == b'\r':
@@ -65,8 +64,9 @@ print('\n本程序的所有交互通过输入"Y"（是）与"N"（不是）来�
 
 while True:
     try:
-        username = input("你的账号:").strip()
-        password = input_noback("你的密码：").strip()
+        username = input("你的账号:\n").strip()
+        print("\n你的密码:")
+        password = input_noback().strip()
         zxw = login(username, password)
         os.system("cls")
         print("登录成功，正在获取考试列表...")
