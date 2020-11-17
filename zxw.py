@@ -1,7 +1,8 @@
 from zhixuewang import login
 from zhixuewang import exceptions as zhiExc
 import os
-import msvcrt, sys
+import msvcrt
+import sys
 
 
 def get_origin(exam):
@@ -21,7 +22,6 @@ def get_origin(exam):
 
 
 def getget_origin(exam):
-
     sub = str(input("\n请输入学科名称："))
     url = zxw.get_original(sub, exam)
     test = str(url[1:len(url)-1])
@@ -104,7 +104,6 @@ while True:
                     exit()
                 else:
                     print("输入有误")
-            
 
     except zhiExc.UserOrPassError:
         print("用户名或密码错误，请重新输入。\n")
