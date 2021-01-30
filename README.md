@@ -1,8 +1,13 @@
 # 智学网查分
 
+[![Release Version](https://img.shields.io/github/v/release/YogurtZebra/zhixuewang?style=flat-square)](https://github.com/YogurtZebra/zhixuewang/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/YogurtZebra/zhixuewang?style=flat-square)](LICENSE)
+[![GitHub repo size](https://img.shields.io/github/repo-size/YogurtZebra/zhixuewang?style=flat-square&color=3cb371)](https://codeload.github.com/YogurtZebra/zhixuewang/zip/master)
+
 这是一个用来在智学网上查分的python小程序。
 
 该程序基于[zhixuewang包](https://github.com/anwenhu/zhixuewang-python)的fork版本，只是一个简单的命令行交互。
+
 GUI版本正在制作~~（咕咕咕~~
 
 ## 注意
