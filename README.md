@@ -2,7 +2,7 @@
 
 [![Release Version](https://img.shields.io/github/v/release/YogurtZebra/zhixuewang?style=flat-square)](https://github.com/YogurtZebra/zhixuewang/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/YogurtZebra/zhixuewang?style=flat-square)](LICENSE)
-[![GitHub repo size](https://img.shields.io/github/repo-size/YogurtZebra/zhixuewang/:path*?style=flat-square&color=3cb371)](https://codeload.github.com/YogurtZebra/zhixuewang/zip/master)
+[![GitHub repo size](https://img.shields.io/github/languages/code-size/YogurtZebra/zhixuewang?style=flat-square&color=3cb371)](https://codeload.github.com/YogurtZebra/zhixuewang/zip/master)
 
 这是一个用来在智学网上查分的python小程序。
 
