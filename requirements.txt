@@ -1,4 +1,9 @@
-pyinstaller
+# Core
+git+https://github.com/YogurtZebra/zhixuewang-python
+
+# Development
 pylint
 autopep8
-git+https://github.com/YogurtZebra/zhixuewang-python
+
+# Package
+pyinstaller

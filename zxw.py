@@ -2,7 +2,6 @@ from zhixuewang import login
 from zhixuewang import exceptions as zhiExc
 import os
 import msvcrt
-import sys
 
 
 def get_origin(exam):
@@ -91,7 +90,7 @@ while True:
             i = int(i)
             exam = exams[i]
             print("成绩为:")
-            print(zxw.get_self_mark(exam, True))
+            print(zxw.get_self_mark(exam))
             get_origin(exam)
             while True:
                 b = input("\n是否查询其他考试？\n").strip()
