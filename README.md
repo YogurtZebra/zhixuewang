@@ -14,8 +14,6 @@ GUI版本正在制作~~（咕~~
 
 为了美观起见，我对默认的包进行了修改，fork的项目位于[这里](https://github.com/YogurtZebra/zhixuewang-python)。
 
-打包好的exe文件位于dist文件夹下
-
 初次启动时，建议打开一次后关闭再开一次，否则清屏函数可能失效
 
 如果无法运行，请安装[Windows10通用C运行时](https://www.microsoft.com/zh-cn/download/details.aspx?id=48234)
