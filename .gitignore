@@ -21,6 +21,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.spec
 MANIFEST
 
 # Unit test / coverage reports
@@ -34,7 +35,6 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-.spec
 .idea
 .vscode
 user

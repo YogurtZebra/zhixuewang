@@ -18,6 +18,8 @@ GUI版本正在制作~~（咕咕咕~~
 
 初次启动时，建议打开一次后关闭再开一次，否则清屏函数可能失效
 
+如果无法运行，请安装[Windows10通用C运行时](https://www.microsoft.com/zh-cn/download/details.aspx?id=48234)
+
 ## 如何使用
 
 对于非程序员朋友，请直接到[Release](https://github.com/YogurtZebra/zhixuewang/releases)下载单文件使用
