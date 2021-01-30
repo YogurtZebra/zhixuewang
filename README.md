@@ -8,7 +8,7 @@
 
 该程序基于[zhixuewang包](https://github.com/anwenhu/zhixuewang-python)的fork版本，只是一个简单的命令行交互。
 
-GUI版本正在制作~~（咕咕咕~~
+GUI版本正在制作~~（咕~~
 
 ## 注意
 
